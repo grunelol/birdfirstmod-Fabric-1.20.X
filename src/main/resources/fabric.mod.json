@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "birdfirstmod",
+	"version": "${version}",
+	"name": "Bird First Mod",
+	"description": "This is my amazing new mod!!",
+	"authors": [
+		"Mr. Bird"
+	],
+	"contact": {
+		"homepage": "https://mywebsite.com/",
+		"sources": "https://github.com/FabricMC/mymod"
+	},
+	"license": "MIT",
+	"icon": "assets/birdfirstmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bird.firstmod.BirdFirstMod"
+		],
+		"fabric-datagen": [
+			"net.bird.firstmod.BirdFirstModDataGenerator"
+		],
+		"client": [
+			"net.bird.firstmod.BirdFirstModClient"
+		]
+	},
+	"mixins": [
+		"birdfirstmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
